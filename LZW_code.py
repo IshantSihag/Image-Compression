@@ -4,10 +4,10 @@ import numpy as np
 # %matplotlib inline
 from IPython.display import Image
 
-
-IMAGE_NAME = "./images/Fig81a.tif"
+# enter Image file name here
+IMAGE_NAME = "image.jpeg"
 FILENAME = "lzw_encodecode.txt"
-DECODED_IMAGE_NAME = "Decoded_Image.tif"
+DECODED_IMAGE_NAME = "Decoded_Image.png"
 
 def encodeWrite(image_shape, block_size, arr):
     arr = [[*image_shape, block_size]] + arr
